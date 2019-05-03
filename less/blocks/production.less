@@ -1,0 +1,198 @@
+.production {
+  padding-bottom: 23px;
+
+  &__wrapper {
+    margin: 0 30px;
+    margin-top: 30px;
+    padding-bottom: 32px;
+
+    border: 1px solid #eeddee;
+  }
+
+  &__header {
+    position: relative;
+    margin: 0;
+    padding: 25px 0;
+    padding-left: 90px;
+
+    font-size: 17px;
+    line-height: 24px;
+    
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 33px;
+      left: 33px;
+
+      width: 33px;
+      height: 33px;
+
+      background-image: url(../img/camera.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &__video-wrapper {
+    position: relative;
+
+    &::after{
+      content: "";
+
+      position: absolute;
+      top: calc(50% - 77px/2);
+      left: calc(50% - 101px/2);
+
+      width: 101px;
+      height: 77px;
+
+      background-image: url(../img/play.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 101px 77px;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: scale(1.2, 1.2);
+    }
+
+    &:active::after {
+      transform: scale(0.8, 0.8);
+      opacity: 0.3;
+    }
+  }
+
+  &__description {
+    padding: 0 30px;
+    margin-top: 18px; 
+  }
+
+  &__text {
+    margin: 0;
+    padding-right: 10px;
+    margin-left: 5px;
+
+   font-size: 13px;
+   line-height: 24px; 
+  }
+
+  &__button {
+    margin-top: 25px;
+    margin-left: 5px;
+    width: 192px;
+  }
+}
+
+@media @tablet {
+  .production {
+    padding-bottom: 65px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 0 50px;
+      margin-top: 55px;
+      padding-bottom: 45px;
+    }
+  
+    &__header {
+      order: 2;
+      
+      padding: 30px 0;
+      padding-left: 105px;
+
+      font-size: 20px;
+
+      &::before {
+        top: 27px;
+        left: 41px;
+      }
+    }
+
+    &__video-wrapper {
+      order: 1;
+    }
+
+    &__image {
+      width: 668px;
+      height: 455px;  
+    }
+
+    &__description {
+      order: 3;
+
+      margin-top: 3px;
+      padding: 0 35px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 30px;  
+    }
+
+    &__button {
+      margin-top: 35px;
+      width: 100%;  
+    }
+  }
+}
+
+@media @desktop {
+  .production {
+    padding-bottom: 105px;
+
+    &__wrapper {
+      position: relative;
+
+      margin: 0 100px;
+      margin-top: 55px;
+      padding-left: 682px;
+      padding-bottom: 62px;
+    }
+
+    &__header {
+      padding: 95px 60px 0 80px;
+
+      &::before {
+        top: 41px;
+        left: 79px;
+      }
+    }
+
+    &__video-wrapper {
+      position: static;
+
+      &::after{
+        top: 190px;
+        left: 290px;
+      }
+    }
+
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 682px;
+      height: 455px;
+    }
+
+    &__description {
+      padding-left: 80px;
+      padding-right: 60px;
+      margin-top: 33px;
+    }
+
+    &__text {
+      padding: 0;
+      margin: 0;
+    }
+
+    &__button {
+      margin-left: 0;
+      margin-top: 45px;
+    }
+  }
+}

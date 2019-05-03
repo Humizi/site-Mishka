@@ -1,0 +1,179 @@
+.about-us {
+  margin: 0 30px;
+  margin-top: 70px;
+
+  &__header {
+    margin: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__list-item {
+    position: relative;
+
+    margin-top: 83px;
+
+    line-height: 20px;
+    font-weight: 700;
+
+    &--icon-1::before {
+      content: "";
+
+      position: absolute;
+      top: -55px;
+      left: 8px;
+
+      width: 32px;
+      height: 38px;
+
+      background-image: url(../img/icon-1.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0px;
+    }
+
+    &--icon-2::before {
+      content: "";
+
+      position: absolute;
+      top: -52px;
+      left: 0;
+
+      width: 47px;
+      height: 28px;
+
+      background-image: url(../img/icon-2.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--icon-3::before {
+      content: "";
+
+      position: absolute;
+      top: -48px;
+      left: 8px;
+
+      width: 34px;
+      height: 28px;
+
+      background-image: url(../img/icon-3.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--icon-4::before {
+      content: "";
+
+      position: absolute;
+      top: -50px;
+      left: 2px;
+
+      width: 35px;
+      height: 35px;
+
+      background-image: url(../img/icon-4.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--icon-5::before {
+      content: "";
+
+      position: absolute;
+      top: -50px;
+      left: -6px;
+
+      width: 55px;
+      height: 24px;
+
+      background-image: url(../img/icon-5.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--icon-6::before {
+      content: "";
+      
+      position: absolute;
+      top: -50px;
+      left: 3px;
+
+      width: 33px;
+      height: 33px;
+
+      background-image: url(../img/icon-6.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+@media @tablet {
+  .about-us {
+    margin: 0 50px;
+    margin-top: 117px;
+
+    &__header {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__list-item {
+      margin-top: 110px;
+      width: 334px;
+
+      font-size: 20px;
+      line-height: 22px;
+
+      &--icon-2 {
+        order: 3;
+      }
+
+      &--icon-3 {
+        order: 5;
+      }
+
+      &--icon-4 {
+        order: 2;
+      }
+
+      &--icon-5 {
+        order: 4;
+      }
+      &--icon-6 {
+        order: 6;
+      }
+
+      &--icon-1,
+      &--icon-4 {
+        margin-top: 105px;
+      }
+    }
+  }
+}
+
+@media @desktop {
+  .about-us {
+    margin: 55px 100px 90px 100px;
+    padding: 0 175px;
+
+    &__header {
+      font-size: 53px;
+      line-height: 57px;  
+    }
+
+    &__list-item{
+      width: 350px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.knitted-order {
+
+  &__text {
+    margin: 0;
+    margin-top: 22px;
+    padding: 0 30px;
+
+    font-size: 13px;
+    line-height: 24px;
+    color: #444;  
+  }
+
+  &__form {
+    padding: 0 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media @tablet {
+  .knitted-order {
+    position: relative;
+
+    margin-bottom: 50px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -87px;
+      left: 0;
+      
+      width: 100%;
+      height: 30px;
+
+      background-image: url(../img/line.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+    }
+
+    &__text {
+      padding: 0 50px;
+      margin-top: 77px;
+
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__form {
+      padding: 0;
+    }
+  }
+}
+
+@media @desktop {
+  .knitted-order {
+
+    &::before {
+      top: -140px;
+      left: 0;
+
+      background-size: cover;
+    }
+
+    &__text {
+      padding: 0 275px;
+      margin-top: 125px;
+    }
+  }
+}

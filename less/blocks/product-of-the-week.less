@@ -1,0 +1,61 @@
+  .product-of-the-week {
+    position: relative;
+
+    margin-top: 40px;
+
+    &::after {
+      content: "";
+  
+      position: absolute;
+      bottom: -65px;
+      left: 0;
+
+      width: 100%;
+      height: 30px;
+  
+      background-image: url(../img/line-2.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+  
+    }
+  }
+
+@media @tablet {
+  .product-of-the-week {
+    margin: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -10px;
+      left: 0;
+      
+      width: 100%;
+      height: 30px;
+
+      background-image: url(../img/line.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &::after {
+      bottom: -80px;
+    }
+  }
+}
+
+@media @desktop {
+  .product-of-the-week {
+    padding-bottom: 100px;
+
+    &::before {
+      background-size: cover;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+}

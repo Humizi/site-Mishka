@@ -1,0 +1,197 @@
+.knitted-baskets {
+  margin: 0 30px;
+  
+  &__header {
+    margin: 0;
+
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__caption {
+    text-transform: uppercase;
+    line-height: 30px;
+    color: #63d1bb;  
+  }
+
+  &__info {
+    margin-top: 15px;
+  }
+
+  &__description {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__characteristics {
+    margin-top: 20px;
+    width: 260px;
+
+    line-height: 20px;
+
+    border-collapse: collapse;
+
+    &--col1,
+    &--col2 {
+      padding-top: 9px;
+      padding-bottom: 10px;
+
+      font-size: 15px;
+      line-height: 20px;
+
+      border-bottom: 1px solid #ececec;
+    }
+
+    &--col1 {
+      width: 93px;
+    }
+  }
+
+  &__images {
+    margin-top: 30px;
+  }
+
+  &__order {
+    margin-top: 13px;
+  }
+
+  &__price {
+    margin:0; 
+
+    text-align: center;
+    line-height: 24px;
+    font-weight: 700;
+    color: #444;
+  }
+
+  &__button {
+    margin-top: 25px; 
+  }
+}
+
+@media @tablet {
+  .knitted-baskets {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    margin-bottom: 50px; 
+
+    &__title {
+      display: flex;
+      margin-top: 55px;
+    }
+
+    &__header {
+      width: 565px;
+
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &__caption {
+      margin-top: 10px;
+      width: 75px;
+
+      text-align: center;
+      line-height: 17px;
+    }
+
+    &__info {
+      box-sizing: border-box;
+      padding-right: 57%;
+      margin: 0;
+      margin-top: 50px;
+    }
+
+    &__description {
+      margin: 0;
+
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__characteristics {
+      margin-top: 35px;
+    }
+
+    &__images {
+      position: absolute;
+      top: 160px;
+      right: 0;
+
+      margin: 0;
+      width: 50%; 
+    }
+
+    &__image {
+      margin:0;
+      width: 333px;
+      height: 404px;
+    }
+
+    &__order {
+      margin-top: 55px;
+    }
+
+    &__price {
+      margin: 0;
+      
+      font-size: 20px;
+      line-height: 24px;  
+    }
+
+    &__button {
+      margin-top: 35px; 
+      width: 292px;  
+    }
+  }
+}
+
+@media @desktop {
+  .knitted-baskets {
+    margin: 0 100px;
+    padding-left: 45px;
+
+    &__title {
+      flex-direction: row-reverse;
+      margin-top: 134px;
+    }
+
+    &__header {
+      z-index: 1;
+
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    &__caption {
+      margin-top: 15px;
+      margin-right: 48px;
+    }
+
+    &__info {
+      margin-left: 130px;
+      padding-right: 59%;
+    }
+
+    &__characteristics {
+      margin-top: 45px;
+    }
+
+    &__images {
+      top: 80px;
+    }
+
+    &__image {
+      width: 525px;
+      height: 636px; 
+    }
+
+    &__order {
+      margin-top: 110px;
+      margin-left: 130px;
+    }
+  }
+}
