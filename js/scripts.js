@@ -1,13 +1,15 @@
-let btnHamburger = document.querySelector(".site-list__button-hamburger");
-let itemCatalog = document.querySelector(".site-list__item--catalog");
-let itemKnitting = document.querySelector(".site-list__item--knitting");
-let itemSearch = document.querySelector(".site-list__item--search");
-let itemBasket = document.querySelector(".site-list__item--basket");
-let navNojs = document.querySelector(".main-nav--nojs");
+'use strict';
 
-let buttonOrder = document.querySelector(".button-order--js");
-let overlay = document.querySelector(".overlay");
-let modal = document.querySelector(".modal");
+const btnHamburger = document.querySelector(".site-list__button-hamburger");
+const itemCatalog = document.querySelector(".site-list__item--catalog");
+const itemKnitting = document.querySelector(".site-list__item--knitting");
+const itemSearch = document.querySelector(".site-list__item--search");
+const itemBasket = document.querySelector(".site-list__item--basket");
+const navNojs = document.querySelector(".main-nav--nojs");
+
+const buttonOrder = document.querySelector(".button-order--js");
+const overlay = document.querySelector(".overlay");
+const modal = document.querySelector(".modal");
 
 navNojs.classList.remove("main-nav--nojs");
 

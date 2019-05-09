@@ -77,14 +77,17 @@
 
     cursor: pointer;
 
-    &:hover path,
-    &:focus path {
-      fill: #63d1ba;
-    }
+    & svg {
+      fill: #d3d2d2;
 
-    &:active path {
-      fill: #63d1ba;
-      opacity: 0.3;
+      &:hover,
+      &focus {
+        fill: #63d1bb;
+      }
+
+      &:active {
+        fill: rgba(99,209,187,0.3);
+      }
     }
   }
 }

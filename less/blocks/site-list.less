@@ -56,6 +56,11 @@
         top: 40%;
         left: 30px;
       }
+
+      &-loupe svg,
+      &-basket svg{
+        fill: #d3d2d2;
+      }
     }
 
     &__item-link,
@@ -65,8 +70,8 @@
         opacity: 0.6;
       }
 
-      &:hover path,
-      &:focus path{
+      &:hover svg,
+      &:focus svg{
         fill: #63d1bb;
       }
 
@@ -74,7 +79,7 @@
         opacity: 0.3;
       }
 
-      &:active path {
+      &:active svg {
         fill: rgba(99,209,187,0.3);
       }
     }
